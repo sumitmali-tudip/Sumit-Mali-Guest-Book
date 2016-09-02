@@ -1,0 +1,76 @@
+				body{
+					/* background: url("../images/book.jpg") no-repeat center center fixed ;
+ */
+				}
+				table{
+					float:center;
+				}
+				#add_receptionist table{
+					
+					margin-left:10%;
+					
+				}
+				#view_visitor table{
+					width:80%;
+				}
+				#add_receptionist,#add_visitor,#login table{
+					
+					margin-left: 25%;
+					padding:5px,5px,5px,5px;
+				}
+				#submitButton{
+					padding-left: 5vmin;
+				}
+				
+				#links{
+					font-size:2.5vmin;
+					width:100%;
+					
+				}
+				.container {
+					padding-right: 0;
+					padding-left: 0;
+					width:100%;
+				}
+				#add_receptionist,#add_visitor,#login{					
+					float:center;
+					position:relative;
+					height:100%;
+				 	width: 100%;
+					
+				}
+				
+				
+				td, td input{
+					font-size:2.5 vmin;				
+				}
+				th{
+					font-size:3.5 vmin;
+					padding-left:5vmax;
+				}
+				tr{
+					margin-left:5vw;
+				}
+				#logo{
+					position: relative;
+					float:left;
+					width:100%;				
+				
+					background-color: lightblue;
+					
+					height:15%;
+					
+				}
+				#logo img{
+					float:left;
+					margin: 8px;
+					height: 15vh;
+					width:50vw;
+				}
+				
+			
+				
+				div a{
+					padding: 15px;
+				}
+	

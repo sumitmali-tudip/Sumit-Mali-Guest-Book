@@ -1,0 +1,24 @@
+		
+		
+		<div id="login" class="container" ng-controller="login">
+			<table>
+				<tr>
+					<th colspan="2"><label class="panel-heading">Login</label></th>
+				</tr>
+				<tr>
+					<td><input id="email_id" class="form-control" type="text" name="username" ng-model="username" placeholder="Enter your Username"/><span id="message_email"></span></td>
+				</tr>
+				<tr></tr>
+				<tr>
+					<td><input class="form-control" type="password" name="password" ng-model="password" placeholder="Enter your Password"/></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center" id="submitButton">
+						<input class="btn btn-primary" type="submit" value="Login" ng-click="loginRequest()" name="login"></input>
+						<input class="btn btn-primary" type="reset" value="Reset" name="Reset"></input>
+						<a href="#add_receptionist">Sign up</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	
