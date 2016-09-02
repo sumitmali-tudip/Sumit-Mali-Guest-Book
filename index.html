@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="enctype">
+	<head>
+		<title>TUDIP Web Page</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/jquery.min.js"></script>
+		
+		<script src="js/bootstrap.min.js"></script>		
+		<script src="js/angular.min.js"></script>		
+		<script src="js/angular-route.js"></script>
+		<script src="js/angular-route.min.js"></script>
+		<script src="js/email_validate.js"></script>
+		
+		<script src="js/routing.js"></script>
+		<link  rel="stylesheet" href="css/style.css">
+		<style>
+				
+		</style>
+	</head>
+	<body data-ng-app="guest_app" class="container" ng-model="myVar">
+	
+	
+		<div id="logo" >
+			<img src="images/guestbook1.gif"/>
+		</div>
+		</br></br></br>
+			<!-- <div id="links" class="btn-group-justify" ng-if="myVar='first'" >
+				  <a href="#home">Home</a>
+				  <a href="#login">Login</a>
+				  <a href="#about_us">About Us</a>
+			</div>-->
+			 <div id="links" class="btn-group-justify" ng-if="myVar='second'">
+				  <a href="#home">Home</a>
+				  <a href="#login">Login</a>
+				  <a href="#add_visitor">Add Visitor</a>
+				  <a href="#view_visitor">Visitors</a>
+				  <a href="#add_receptionist">Add Receptionist</a>				  
+				  <a href="#about_us">About Us</a>
+				  <a href="#logout">Logout</a>
+				  <br>
+			</div>
+			<!-- <div id="links" class="btn-group-justify" ng-if="myVar='third'">
+				  <a href="#home">Home</a>
+				  <a href="#add_visitor">Add Visitor</a>
+				  <a href="#view_visitor">View Visitor</a>
+				  <a href="#update_visitor">Update Visitor</a>
+				  <a href="#delete_visitor">Delete Visitor</a>					  
+				  <a href="#about_us">About Us</a>
+				  <a href="#logout">Logout</a>
+			</div> -->
+			<div ng-view>
+			</div>
+			
+	</body>
+</html>

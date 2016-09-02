@@ -1,0 +1,52 @@
+	
+	<form ng-controller="view_visitor" >
+		<div id="view_visitor" class="container" align="center">
+		<input id="submitButton" class="btn btn-primary" type="submit" value="View All Visitors" ng-click="view_visitorRequest()"></input>
+		<input id="submitButton" type="text" placeholder="Enter User Id" ng-model="user_id_view"></input>
+		<input id="submitButton" class="btn btn-primary" type="button" value="View Specific Visitors" ng-click="view_visitorUniqueRequest()"></input></br>
+		<h3 align="center">View Visitors</h3>
+		
+			<table border="2">
+				<tr>
+					<td>Id</td>
+					<td>Name</td>
+					<td>Email Id</td>
+					<td>Phone No</td>
+					<td>In Time</td>
+					<td>Out Time</td>
+					<td>User Id</td>
+					<td>Created at</td>
+					<td>Updated at</td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				<tr ng-repeat="content in myWelcome track by $index"> 
+					<td ng-show="!a">{{ content.id }} </td>
+                    <td ng-show="!a">{{ content.name }}</td>
+                    <td ng-show="!a">{{ content.email }}</td>
+                    <td ng-show="!a">{{ content.phone_no }}</td>
+                    <td ng-show="!a">{{ content.in_time }}</td>
+                    <td ng-show="!a">{{ content.out_time }}</td>
+                    <td ng-show="!a">{{ content.user_id }}</td>
+                    <td ng-show="!a">{{ content.created_at }}</td>
+                    <td ng-show="!a">{{ content.updated_at }}</td>
+					<td><input type="text" ng-show="a" value={{content.id}}></td>
+                    <td><input type="text" ng-model="content.name" ng-show="a" value={{content.name}}></td>
+                    <td><input type="text" ng-model="content.email" ng-show="a" value={{content.email}}></td>
+                    <td><input type="text" ng-model="content.phone_no" ng-show="a" value={{content.phone_no}}></td>
+                    <td><input type="text" ng-model="content.in_time" ng-show="a" value={{content.in_time}}></td>
+                    <td><input type="text" ng-model="content.out_time" ng-show="a" value={{content.out_time}}></td>
+                    <td><input type="text" ng-show="a"value={{content.user_id}}></td>
+                    <td><input type="text" ng-show="a"value={{content.created_at}}></td>
+                    <td><input type="text" ng-show="a"value={{content.updated_at}}></td>
+                    <td><button class="btn btn-success" ng-show="!a" ng-click="a=!a">Edit</button><button class="btn btn-success" ng-click = "update_visitorRequest(content)" ng-show="a" ng-click="!a=a">Update</button></td>
+                    <td><button class="btn btn-danger" ng-click = "delete_visitorRequest(content)">Delete</button></td>
+
+				</tr>
+
+				
+				
+			</table>
+		</div>
+	</form>

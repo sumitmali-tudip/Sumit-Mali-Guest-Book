@@ -1,0 +1,38 @@
+	<script src="js/emailValidate.js"></script>
+	
+	
+		<div id="guest_entry" class="container" ng-controller="guest_entry">
+			<table>
+				<tr>
+					<th colspan="2" align="center"><label class="panel-heading">Guest Registration Form</label></th>
+				</tr>
+				<tr>
+					<td>Name:</td>
+					<td><input class="form-control" type="text" name="name" ng-model="name" placeholder="Enter your Name"/></td>
+				</tr>
+				<tr>
+					<td>Email Id:</td>
+					<td><input id="email_id" class="form-control" type="email" name="email_id" ng-model="email_id" placeholder="Enter your Email Id" onkeyup="validateEmail()"/><span id="message_email"></span></td>
+				</tr>
+				<tr>
+					<td>Contact No:</td>
+					<td><input class="form-control" type="text" name="contact" ng-model="contact" placeholder="Enter your Contact"/></td>
+				</tr>
+				<tr>
+					<td>In Time:</td>
+					<td><input class="form-control" type="time" name="entry_time" ng-model="in_time" placeholder="Enter your Entry Time"/></td>
+				</tr>
+				<tr>
+					<td>Out Time:</td>
+					<td><input class="form-control" type="time" name="out_time" ng-model="out_time" placeholder="Enter your Out Time"/></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center" id="submitButton">
+						<input class="btn btn-primary" type="submit" value="Submit" name="submit" ng-click="guest_entryRequest()"></input>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<input class="btn btn-primary" type="reset" value="Reset" name="Reset"></input>
+					</td>
+				</tr>
+			</table>
+		</div>
+	
+		
